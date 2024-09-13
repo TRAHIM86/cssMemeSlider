@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Star-wars';
+    src:
+        url('../fonts/star-wars.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 * {
     margin: 0;
     padding: 0;
@@ -49,7 +57,7 @@
     width: 95%;
     display: flex;
     flex-direction: row;
- 
+    padding-top: 1em;
 }
 .texts-vraper {
    overflow: hidden;
@@ -65,9 +73,10 @@
 }
 .h3-text {
     width: 100%;
-    color: lime;
-    font-family: Helvetica;
+    color: yellow;
+    font-family: 'Star-wars';
     letter-spacing: 0.06rem;
+    font-size: 1.2em;
 }
 .inputs-label {
     z-index: 2;
@@ -78,6 +87,9 @@
 .label-input {
     padding: 0.2em; 
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .input-slide {
     display: none;
@@ -86,9 +98,9 @@ span {
     display: inline-block;
     width: 1em;
     height: 1em;
-    border: 3px solid lime;
+    border: 3px solid yellow;
     border-radius: 50%;
-    background-color: lime;
+    background-color: yellow;
     transition: 0.5s;
 }
 .label-input:hover span{
@@ -134,3 +146,28 @@ span {
     transform: translateX(-75%);
 }
 
+/*----------------медиа 768--------------------*/
+
+@media only screen and (width <768px) {
+    .slider-texts-inputs {
+        max-width: 43em;
+    }
+    .texts-inputs {
+        height: 30%;;
+        flex-direction: column-reverse;
+        justify-content: start;
+    } 
+    .inputs-label {
+        justify-content: center;
+    } 
+    .texts-vraper {
+        width: 100%;
+        height: 50%;
+    }
+    .texts {
+        margin-top: 1em;
+    }
+    .h3-text {
+        font-size: 75%;
+    }    
+}
