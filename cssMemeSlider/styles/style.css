@@ -151,7 +151,7 @@ span {
 
 @media only screen and (width <768px) {
     .slider-texts-inputs {
-        max-width: 43em;
+        max-width: 38em;
     }
     .texts-inputs {
         height: 40%;;
@@ -169,6 +169,6 @@ span {
         margin-top: 1em;
     }
     .h3-text {
-        font-size: 75%;
+        font-size: 70%;
     }    
 }
