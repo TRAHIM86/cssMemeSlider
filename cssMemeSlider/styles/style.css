@@ -71,6 +71,7 @@
     justify-content: start;
     width: 400%;
     transition: 1s;
+    padding: 0.2em; 
 }
 .h3-text {
     width: 100%;
