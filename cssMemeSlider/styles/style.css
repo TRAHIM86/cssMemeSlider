@@ -1,7 +1,9 @@
 @font-face {
     font-family: 'Star-wars';
-    src:
-        url('../fonts/star-wars.ttf') format('truetype');
+    src: url(../fonts/star-wars.woff2) format('woff2'),
+         url(../fonts/star-wars.woff) format('woff'),
+         url(../fonts/star-wars.ttf) format('truetype'),
+         url(../fonts/star-wars.svg) format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -27,11 +29,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 0.8em;
 }
 .slider-vripper {
     width: 95%;
     overflow: hidden;
+    border-radius: 0.5em;
 }
 .slides {
     display: flex;
@@ -61,8 +64,6 @@
 }
 .texts-vraper {
    overflow: hidden;
-   
-   
 }
 .texts {
     display: flex ;
@@ -85,7 +86,7 @@
     align-items: start;
 }
 .label-input {
-    padding: 0.2em; 
+    padding: 0.3em; 
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -98,14 +99,14 @@ span {
     display: inline-block;
     width: 1em;
     height: 1em;
-    border: 3px solid yellow;
+    border: 0.2em solid yellow;
     border-radius: 50%;
     background-color: yellow;
     transition: 0.5s;
 }
 .label-input:hover span{
     background-color: white;
-    border: 3px solid white;
+    border: 0.2em solid white;
 }
 
 
@@ -153,7 +154,7 @@ span {
         max-width: 43em;
     }
     .texts-inputs {
-        height: 30%;;
+        height: 40%;;
         flex-direction: column-reverse;
         justify-content: start;
     } 
